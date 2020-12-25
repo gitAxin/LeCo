@@ -27,7 +27,7 @@
  * 链接：https://leetcode-cn.com/problems/the-masseuse-lcci
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class C001_Masseuse {
+public class C001_AnMoShi {
 
     public static void main(String[] args) {
         int[] nums = {2,1,4,5,3,1,1,3};
@@ -51,7 +51,7 @@ public class C001_Masseuse {
         temps[0] = nums[0];
         temps[1] = Math.max(nums[0],nums[1]);
 
-        for(int i = 2; i<nums.length; i++){
+        for(int i = 2; i < nums.length; i++){
             temps[i] = Math.max(temps[i-1], nums[i] + temps[i-2]);
         }
 
